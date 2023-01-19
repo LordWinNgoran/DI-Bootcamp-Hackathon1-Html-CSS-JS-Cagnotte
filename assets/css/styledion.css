@@ -47,3 +47,19 @@ p {
     color: red;
     display: none;
 }
+
+#span-succes {
+    color: rgb(81, 255, 0);
+    display: none;
+    border: 5px solid rgb(81, 255, 0);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#span-error {
+    color: red;
+    display: none;
+    border: 5px solid red;
+    font-size: 20px;
+    border-radius: 15px;
+}
