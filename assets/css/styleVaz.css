@@ -1,0 +1,42 @@
+body{
+    background-image: url(../img/WhatsApp\ Image\ 2023-01-19\ at\ 17.10.22\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+    margin-top: 100px;
+}
+#register {
+    border: 2px solid #0097FF;
+    border-radius: 15px;
+    height: 500px;
+    margin: auto;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    color: #0097FF;
+}
+hr {
+    height: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.ligne{
+    height: 10px;
+}
+button{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+p {
+    color: red;
+    display: none;
+}
+#basic-addon1{
+    background:#0097FF;
+}
+#username, #password{
+    text-align: center;
+}
