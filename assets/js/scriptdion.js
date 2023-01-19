@@ -92,3 +92,24 @@ Variableconfirmpassword.addEventListener("focus", function(e) {
         console.log(VariableUsername.value)
     }
 })
+
+
+/* Gerer le bouton Inscription */
+
+let formsubmit = document.getElementById('btn')
+formsubmit.addEventListener('click',function(e) {
+
+    e.preventDefault()
+     
+    let userobj={
+        username : VariableUsername.value,
+        mail : VariableEmail.value,
+        password : btoa(Variablepassword.value),
+        
+
+     }
+     let user = 'userinfo'+ VariableUsername.value 
+     localStorage.setItem(user,JSON.stringify(userobj))
+         return false;
+        
+})
