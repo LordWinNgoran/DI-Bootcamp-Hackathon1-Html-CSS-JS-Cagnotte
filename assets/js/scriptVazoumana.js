@@ -15,7 +15,7 @@ let connexionButton = document.getElementById("Connexion");
 
 VariableUserName.addEventListener("blur", function(e) {
     if(e.target.value.length == 0){
-        VariableEmail.style.border = "2px solid red";
+        VariableUserName.style.border = "2px solid red";
         document.querySelector("#error-username").style.display = "block";
     }
 })
