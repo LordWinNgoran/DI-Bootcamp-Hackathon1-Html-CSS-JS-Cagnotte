@@ -92,3 +92,45 @@ Variableconfirmpassword.addEventListener("focus", function(e) {
         console.log(VariableUsername.value)
     }
 })
+
+
+/* Gerer le bouton Inscription */
+
+let formsubmit = document.getElementById('btn')
+formsubmit.addEventListener('click',function(e) {
+
+    e.preventDefault()
+    
+    /* Verifier les champs avant l'inscription */
+
+    if((Variablepassword.value == Variableconfirmpassword.value) && VariableEmail.value.length != 0 && VariableUsername.value.length != 0 && Variablepassword.value.length != 0 && Variableconfirmpassword.value.length != 0){
+        
+        //Creer un objet pour stocker les donnees 
+        let userobj={
+            username : VariableUsername.value,
+            mail : VariableEmail.value,
+            password : btoa(Variablepassword.value),
+            nombreChance : 0,
+            IsAuth : false,
+         }
+        
+
+        let user = VariableUsername.value 
+        localStorage.setItem(user,JSON.stringify(userobj))
+        document.querySelector("#span-succes").style.display = "block";
+        document.querySelector("#span-error").style.display = "none";
+        //Redirection vers login
+        window.location.href = 'file:///C:/Mes%20Projets/PROJET%20ATOS/HACKATHON1/DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/html/login.html';
+            
+        return false;
+
+
+    } 
+
+    else {
+        document.querySelector("#span-error").style.display = "block";
+        document.querySelector("#span-succes").style.display = "none";
+    }   
+    
+        
+})
