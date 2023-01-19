@@ -1,0 +1,49 @@
+/* Baground image */
+body{
+    background-image: url(../img/boules-loto-colorees-volant_107791-5289.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+
+/* Border Card */
+#register {
+    border: 2px solid red;
+    border-radius: 15px;
+    height: 650px;
+    margin-bottom: 80px;
+}
+
+h1 {    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    color: red;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/*Button */ 
+button{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Error message */
+p {
+    color: red;
+    display: none;
+}
