@@ -1,21 +1,37 @@
 body{
-    background-image: url(../img/WhatsApp\ Image\ 2023-01-19\ at\ 17.10.22\ \(1\).jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/Logo_QPUC_2016.jpg) no-repeat right bottom fixed ; /* subdiviser le body avec une image*/
+    background-position: left 100% bottom 100%;
+    background-size: 55% 100%;
+    background-color: gold;
+    border: solid groove;
+    opacity: 0.9;
+}
+.container{
+    margin-right: 20%;
+    margin-top: 10%;
+}
+.btn {
+    background-color: rgb(17, 78, 170);  
+    color: gold; 
+}
+.btn:hover{
+    color:black;
+    border: gold solid;
 }
 .row {
     margin-top: 100px;
 }
-#register {
-    border: 2px solid #0097FF;
+#login {
+    border: 2px solid rgb(37, 23, 185);
     border-radius: 15px;
     height: 500px;
     margin: auto;
+   
 }
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 40px;
-    color: #0097FF;
+    color: rgb(19, 9, 124);
 }
 hr {
     height: 10px;
@@ -35,8 +51,11 @@ p {
     display: none;
 }
 #basic-addon1{
-    background:#0097FF;
+    background:rgb(38, 22, 126);
+    color: gold;
 }
 #username, #password{
+    border: rgb(38, 22, 126) groove 0.3px;
     text-align: center;
+    
 }

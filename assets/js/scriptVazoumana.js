@@ -15,7 +15,7 @@ let connexionButton = document.getElementById("Connexion");
 
 VariableUserName.addEventListener("blur", function(e) {
     if(e.target.value.length == 0){
-        VariableEmail.style.border = "2px solid red";
+        VariableUserName.style.border = "2px solid red";
         document.querySelector("#error-username").style.display = "block";
     }
 })
@@ -83,6 +83,7 @@ formsubmit.addEventListener('click',function(e) {
     if ( connetingUserName=== userinfos.username && connetingPwd === pwd ){
         connexion=true;
         alert("Vous êtes connectez");
+        sessionStorage.setItem("auth",connetingUserName); // Cette ligne nous permet de recuperer la nom de l'utilisateur dans la nouvelle page
         window.location.href = 'C:\Users\DELL\Downloads\OBI\Devlabs\DI_Bootcamp\DI_Bootcamp\HACKATON\DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/test.html';
             
     } else {
