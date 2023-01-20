@@ -1,30 +1,26 @@
+
+// we take the name on the session storage
 let userName = sessionStorage.getItem('auth');
 
+
+
+//we check if the user is connected
 if(localStorage.getItem(userName)){
     alert('ok')
 }else{
     alert('non ok')
 }
 
+//for the mental calcul we need a number
 let number=prompt('Please give us your favorite number')
 number=parseInt(number)
+//Random of the number
 let rand=Math.floor(Math.random() *number)+1;
 let calcul =((rand**2)*2+10)/2
 
-
-
-/* let createDiv=document.createElement('div')
-document.body.appendChild(createDiv) */
-
-/* createDiv.textContent="What'is the result of: (("+rand+"^2)*2+10)/2" */
+//
 document.querySelector('h6').textContent="What's the result of: (("+rand+"^2)*2+10)/2"
-/* let createInput=document.createElement('input')
-document.querySelector('div').appendChild(createInput) */
 
-/* let createButton=document.createElement('button')
-createButton.textContent="Envoyer"
-createButton.setAttribute("type","number")
-document.querySelector('div').appendChild(createButton) */
 
 console.log('random',rand,'calcul',calcul)
 console.log("The rand"+rand)

@@ -1,7 +1,46 @@
+body{
+    background-image: url('../img/gettyimages-108353971-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 p {
     font-size: 40px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 5px solid red;
+    border: 5px solid rgb(255, 208, 0);
     margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(17, 78, 170);
+    color: rgb(255, 208, 0);
+}
+
+.card {
+    margin: auto;
+    width: 200px;
+}
+
+/*
+img{
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 150px;
+    border: 4mm ridge rgba(239, 251, 18, 0.6);
+}*/
+
+.card-body {
+    background-color: rgb(255, 208, 0);
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+a{
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 20px;
+    background-color: rgb(17, 78, 170);
 }
