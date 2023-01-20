@@ -75,7 +75,6 @@ formsubmit.addEventListener('click',function(e) {
      // Récupertration des donnés
     let userinfos = JSON.parse(localStorage.getItem(connetingUserName))
     console.log(userinfos);
-   
     //Decoder le password
     let pwd = atob(userinfos.password)
     console.log(pwd)
@@ -84,7 +83,7 @@ formsubmit.addEventListener('click',function(e) {
         connexion=true;
         alert("Vous êtes connectez");
         sessionStorage.setItem("auth",connetingUserName); // Cette ligne nous permet de recuperer la nom de l'utilisateur dans la nouvelle page
-        window.location.href = 'C:\Users\DELL\Downloads\OBI\Devlabs\DI_Bootcamp\DI_Bootcamp\HACKATON\DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/test.html';
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/html/test.html';
             
     } else {
         alert("Votre login ou mot de passe est incorrect")
