@@ -8,19 +8,20 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  background-color: rgb(255, 255, 252);
   
 }
 
 .header {
   overflow: hidden;
-  background-color: #0097FF;
+  background-color: gold;
   padding: 0 10px;
   width: 100%;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: gold;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -29,14 +30,14 @@ body {
   border-radius: 4px;
   position: relative;
   right: 30px;
-  background-color: #ddd;
+  background-color: rgb(17, 78, 170);
   margin: 5px;
 
 }
 
 .header a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(17, 78, 170);
+    color: white;
   }
   
   .header a.active {
@@ -62,6 +63,10 @@ body {
     left: -180px;
 }
 
+.register{
+    
+}
+
 .login{
     position: relative;
     left: -50px;
@@ -70,15 +75,16 @@ body {
 
 
 .img-logo{
-    height: 60px;
-    width: 250px;
+    height: 70px;
+    width: 150px;
     position: relative;
     top: 20px;
+    border-radius: 7px;
 }
 footer { /*code css pour le footer*/
     text-align: center;
     padding: 10px;
-    background-color: #0097FF;
+    background-color: gold;
     color: white;
     width: 100%;
   }
@@ -129,7 +135,7 @@ footer { /*code css pour le footer*/
   }
 .card-title-presentation-projet{
     color: #0097FF;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -145,7 +151,7 @@ footer { /*code css pour le footer*/
   .deplaceCard{
     position: relative;
     left: 130px;
-    height: 420px;
+    height: 398px;
     width:1068px
   }
   .container {
@@ -155,11 +161,21 @@ footer { /*code css pour le footer*/
     margin: 0;
     width: 100%;
   }
+.welcome-presentation{
+    font-size: 100px;
+}
 
+.welcome-presentation:hover{
+    color: #0097FF;
+}
+.welcome-presentation-p{
+    font-size: 50px;
+    color: black;
+}
   /*fin section card*/
   /*code pour gerer les media query concernant la taille des ecran*/
   /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     /* .header {background: red;} */
   }
   
