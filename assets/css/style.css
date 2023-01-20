@@ -63,10 +63,6 @@ body {
     left: -180px;
 }
 
-.register{
-    
-}
-
 .login{
     position: relative;
     left: -50px;
@@ -165,12 +161,10 @@ footer { /*code css pour le footer*/
     font-size: 100px;
 }
 
-.welcome-presentation:hover{
-    color: #0097FF;
-}
+
 .welcome-presentation-p{
     font-size: 50px;
-    color: black;
+    color: white;
 }
   /*fin section card*/
   /*code pour gerer les media query concernant la taille des ecran*/
