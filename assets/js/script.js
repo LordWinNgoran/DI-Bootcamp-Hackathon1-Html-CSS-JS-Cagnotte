@@ -1,3 +1,18 @@
+/**********************************************************************************/
+/********************************* HACKATHON 1 HTML CSS JS  *******************/
+/********************************************************************************/
+
+
+/**
+ * @author: Group Cagnotte pour un champion
+ * @description: Ce projet est un jeu où le gagnant repart avec 
+ * un prix en fonction du nombre de points obtenus. 
+ * Date : 19/01/2023
+ */
+
+/************************ Structure of Game************************************ */
+
+
 
 // we take the name on the session storage
 let userName = sessionStorage.getItem('auth');

@@ -1,3 +1,4 @@
+
 body{
 	font-size: 20px;
 	font-family: sans-serif;
@@ -27,10 +28,13 @@ body{
 	background-color: #38a;
 }
 h1{
-    color: red;
+    color: rgb(17, 78, 170);
     text-align: center;
 }
 
 #result{
 	color: red;
+}
+body{
+	background-color:rgb(219, 214, 189);
 }

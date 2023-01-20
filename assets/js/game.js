@@ -1,4 +1,16 @@
+/**********************************************************************************/
+/********************************* HACKATHON 1 HTML CSS JS  *******************/
+/********************************************************************************/
 
+
+/**
+ * @author: Group Cagnotte pour un champion
+ * @description: Ce projet est un jeu où le gagnant repart avec 
+ * un prix en fonction du nombre de points obtenus. 
+ * Date : 19/01/2023
+ */
+
+/************************ Structure of Game************************************ */
 // we take the name on the session storage
 let userName = sessionStorage.getItem('auth');
 
@@ -73,6 +85,55 @@ let userName = sessionStorage.getItem('auth');
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${5*numCorrect} points on  ${5*myQuestions.length}`;
+
+    if (numCorrect>60){
+      let gray=document.querySelectorAll('button')[0]
+      gray.setAttribute("style","display:none")
+      document.body.appendChild(document.createElement('button'))
+      let button=document.querySelectorAll('button')[1]
+      button.textContent="RECUPEREZ VOTRE PRIX"
+      button.addEventListener('click', launch)
+      function launch(){
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/price/draw.html';
+      }
+    }else if(numCorrect>40){
+      let gray=document.querySelectorAll('button')[0]
+      gray.setAttribute("style","display:none")
+      document.body.appendChild(document.createElement('button'))
+      let button=document.querySelectorAll('button')[1]
+      button.textContent="RECUPEREZ VOTRE PRIX"
+      button.addEventListener('click', launch)
+      function launch(){
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/price/draw.html';
+      }
+    }else if(numCorrect>30){
+      let gray=document.querySelectorAll('button')[0]
+      gray.setAttribute("style","display:none")
+      document.body.appendChild(document.createElement('button'))
+      let button=document.querySelectorAll('button')[1]
+      button.textContent="RECUPEREZ VOTRE PRIX"
+      button.addEventListener('click', launch)
+      function launch(){
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/price/nba.html';
+      }
+    }
+    else{
+      let gray=document.querySelectorAll('button')[0]
+      gray.setAttribute("style","display:none")
+      document.body.appendChild(document.createElement('button'))
+      let button=document.querySelectorAll('button')[1]
+      button.textContent="RECUPEREZ VOTRE PRIX"
+      button.addEventListener('click', launch)
+      function launch(){
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/price/book.html';
+      }
+    }
+
+  }
+
+
+  function Resultat(){
+
   }
 
   const quizContainer = document.getElementById('quiz');

@@ -1,9 +1,16 @@
+/**********************************************************************************/
+/********************************* HACKATHON 1 HTML CSS JS  *******************/
+/********************************************************************************/
+
+
 /**
- * @author: Groupe Hackathon Cagnote
- * @description: Nous avons ici la page d'inscription dans laquelle nous allons gerer le formulaire d'inscription
- * 
+ * @author: Group Cagnotte pour un champion
+ * @description: Ce projet est un jeu où le gagnant repart avec 
+ * un prix en fonction du nombre de points obtenus. 
+ * Date : 19/01/2023
  */
 
+/************************ Structure of Game************************************ */
 
 
 let VariableUsername = document.getElementById("username");
@@ -120,7 +127,7 @@ formsubmit.addEventListener('click',function(e) {
         document.querySelector("#span-succes").style.display = "block";
         document.querySelector("#span-error").style.display = "none";
         //Redirection vers login
-        window.location.href = 'file:///C:/Mes%20Projets/PROJET%20ATOS/HACKATHON1/DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/html/login.html';
+        window.location.href = 'file:///D:/Formation-ATOS/Atos/Hackathon1/Winner%20Price/html/login.html';
             
         return false;
 
