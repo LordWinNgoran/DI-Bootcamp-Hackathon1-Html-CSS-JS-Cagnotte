@@ -120,7 +120,7 @@ formsubmit.addEventListener('click',function(e) {
         document.querySelector("#span-succes").style.display = "block";
         document.querySelector("#span-error").style.display = "none";
         //Redirection vers login
-        window.location.href = 'file:///C:/Mes%20Projets/PROJET%20ATOS/HACKATHON1/DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/html/login.html';
+        window.location.href = 'file:///C:/Users/CLAUDE%20VALERE%20KOFFI/Desktop/HACKATHON/DI-Bootcamp-Hackathon1-Html-CSS-JS-Cagnotte/html/login.html';
             
         return false;
 
