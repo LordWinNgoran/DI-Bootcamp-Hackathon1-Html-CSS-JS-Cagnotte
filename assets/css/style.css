@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    scroll-behavior: inherit;   
+    scroll-behavior: inherit;  
+    width: 100%; 
 }
 
 body { 
@@ -13,7 +14,7 @@ body {
 .header {
   overflow: hidden;
   background-color: #0097FF;
-  padding: 20px 10px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -51,14 +52,28 @@ body {
 }
 
 .header-right {
-  float: right;
+  position: relative;
+  width: 90px;
+  left: 90%;
+  top: 22px;
 }
+.register{
+    position: relative;
+    left: -180px;
+}
+
+.login{
+    position: relative;
+    left: -50px;
+    bottom: 50px;
+}
+
 
 .img-logo{
     height: 60px;
     width: 250px;
     position: relative;
-    bottom: 10px;
+    top: 20px;
 }
 footer { /*code css pour le footer*/
     text-align: center;
@@ -75,7 +90,7 @@ footer { /*code css pour le footer*/
   .description-logo{
     font-size: 35px;
     position: relative;
-    bottom: 5px;
+    top: 30px;
     left: 15px;
     color: white;
   }
@@ -111,16 +126,27 @@ footer { /*code css pour le footer*/
     width: 441px;
     position: relative;
     right: 12px;
-
   }
+.card-title-presentation-projet{
+    color: #0097FF;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
   .presentation-H1{
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
   } 
+  .card-text-p{
+    font-size: 27px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .deplaceCard{
     position: relative;
     left: 130px;
     height: 420px;
+    width:1068px
   }
   .container {
     padding: 10px 16px;
